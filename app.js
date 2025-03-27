@@ -117,23 +117,13 @@ showBtn.addEventListener("click", () => {
 
 const showBtn2 = document.querySelector(".showBtn2");
 showBtn2.addEventListener("click", () => {
-    const inputType = password2.type;
+  const inputType = password2.type;
 
-    if (inputType === "password") {
-        password2.type = "text";
-        showBtn2.textContent = "HIDE";
-    }else {
-        password2console.log("Form submitted");
-console.log("Username value:", usernameValue);
-console.log("Email value:", emailValue);
-console.log("Password value:", passwordValue);
-console.log("Password2 value:", password2Value);
-console.log("Captcha value:", captchaValue);
-console.log("Email regex test:", emailregex.test(emailValue));
-console.log("Password regex test:", passwordregex.test(passwordValue));
-console.log("Password and password2 match:", passwordValue === password2Value);
-console.log("Captcha value length:", captchaValue.length);.type = "password";
-        showBtn2.textContent = "SHOW";
-    }
-
-})
+  if (inputType === "password") {
+    password2.type = "text";
+    showBtn2.textContent = "HIDE";
+  } else {
+    password2console.log("Form submitted");
+    showBtn2.textContent = "SHOW";
+  }
+});
